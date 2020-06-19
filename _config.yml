@@ -1,12 +1,15 @@
 # Site settings
-title:
-email:
-description: > # this means to ignore newlines until "baseurl:"
+title: "Projeto Kali"
+email: "contato@projetokali.com.br"
+description: >  # this means to ignore newlines until "baseurl:"
+  O KALI é um projeto social, sem fins lucrativos, formado por jovens voluntários que buscam apoiar a realização de sonhos por meio da educação.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
-twitter_username:
-github_username:
+github: "projetokali/blog"
+instagram: "projetokali"
+facebook: "Kali"
+facebook_url: "https://www.facebook.com/projetokali"
 
 # Build settings
 markdown: kramdown
