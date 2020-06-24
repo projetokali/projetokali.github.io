@@ -11,5 +11,8 @@ instagram: "projetokali"
 facebook: "Kali"
 facebook_url: "https://www.facebook.com/projetokali"
 
+form_inscricao_voluntarios: "https://www.google.com/forms/about/"
+form_inscricao_alunos: "https://www.google.com/forms/about/"
+
 # Build settings
 markdown: kramdown

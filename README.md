@@ -32,3 +32,9 @@ Para rodar localmente o site:
 ```bash
 jekyll serve
 ```
+
+### Manutenção do site
+
+Informações básicas do projeto e links importantes do site estão definidos em [`_config.yml`](./_config.yml).
+
+Para redefinir, por exemplo, o link do formulário de inscrição de novos voluntários, basta mudar o valor de `form_inscricao_voluntario`.
