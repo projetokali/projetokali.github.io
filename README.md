@@ -1,6 +1,6 @@
 # Projeto Kali
 
-[![Build Status](https://travis-ci.org/github/projetokali/blog.png)](https://travis-ci.org/github/projetokali/blog)
+[![Build Status](https://travis-ci.org/projetokali/blog.svg?branch=master)](https://travis-ci.org/projetokali/blog)
 
 Página desenvolvida com base no tema [Creative](http://startbootstrap.com/template-overviews/creative/) de [Start Bootstrap](http://startbootstrap.com).
 
