@@ -84,6 +84,10 @@ aside {
 
 // Navigation
 
+.active{
+    background-color: rgba( $theme-primary, .1 );;
+}
+
 .navbar-default {
     background-color: rgba(white, .7);
     border-color: rgba($theme-dark, .5);
