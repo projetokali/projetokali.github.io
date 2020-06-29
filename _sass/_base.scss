@@ -105,6 +105,7 @@ aside {
     }
     .nav {
         > li {
+            ul li a,
             > a,
             > a:focus {
                 text-transform: uppercase;
@@ -135,6 +136,19 @@ aside {
             }
         }
     }
+}
+
+.dropdown {
+    background-color: inherit;
+    .dropdown-menu {
+        background-color: inherit;
+        @include sans-serif-font;
+        @include transition-all;
+    }
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
 }
 
 // Homepage Header
