@@ -8,21 +8,24 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="index.html#page-top">Projeto Kali</a>
+            <a class="navbar-brand page-scroll" href="index.html#page-top">
+                <img src="img/logos/k-circle.png" alt="Logo kali">
+                <span class="ml-3">Projeto Kali</span>
+            </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse flex-grow-0" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>
-                    <a class="page-scroll" href="index.html#page-top">Sobre</a>
+                    <a href="sobre.html" target="_blank">Sobre</a>
                 </li>
                 {% if pagina == "front" %}
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Participe</span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Service A</a></li>
-                            <li><a href="#">Service B</a></li>
+                            <li><a href="{{ site.form_inscricao_alunos }}" target="_blank">Seja alunx</a></li>
+                            <li><a href="participe.html">Seja voluntárix</a></li>
                         </ul>
                     </li>
                     <li>

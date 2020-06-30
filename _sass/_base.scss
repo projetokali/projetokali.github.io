@@ -6,6 +6,7 @@ body {
 }
 
 body {
+    margin-top: 50px;
     @include serif-font;
 }
 
@@ -89,15 +90,21 @@ aside {
 }
 
 .navbar-default {
-    background-color: rgba(white, .7);
+    background-color: white;
     border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
+        display: flex;
+        align-items: center;
         color: $theme-primary;
         @include sans-serif-font;
         font-weight: 700;
         text-transform: uppercase;
+        img {
+            @include transition-all;
+            height: 35px;
+        }
         &:hover,
         &:focus {
             color: darken($theme-primary, 10%);
@@ -108,6 +115,7 @@ aside {
             ul li a,
             > a,
             > a:focus {
+                height: inherit;
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
@@ -130,20 +138,14 @@ aside {
     }
     @media (min-width: 768px) {
         &.affix {
-            background-color: white;
+            height: 50px !important;
             .navbar-header .navbar-brand {
                 font-size: 14px;
+                img{
+                    height: 20px;
+                }
             }
         }
-    }
-}
-
-.dropdown {
-    background-color: inherit;
-    .dropdown-menu {
-        background-color: inherit;
-        @include sans-serif-font;
-        @include transition-all;
     }
 }
 
