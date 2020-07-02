@@ -8,6 +8,7 @@ body {
 body {
     margin-top: 50px;
     @include serif-font;
+    overflow-x: hidden; // Arruma o problema do scroll horizontal com o fade-right e fade-left
 }
 
 hr {
@@ -39,9 +40,14 @@ h6 {
 }
 
 p {
+    @include sans-serif-font;
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
+}
+
+p.large{
+    font-size: 22px;
 }
 
 .bg-primary {
@@ -73,6 +79,10 @@ p {
 .bg-dark {
     background-color: $theme-dark;
     color: white;
+}
+
+.bg-white {
+    color: $theme-primary;
 }
 
 .text-faded {
@@ -223,6 +233,17 @@ header {
 }
 
 // Sections
+
+#sobre {
+    min-height: 100vh;
+    @include background-cover;
+    background-position: center;
+    background-image: linear-gradient(0deg, $transparent-theme-primary, $transparent-theme-base), url('../img/fotos/passeio-usp.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
 
 .section-heading {
     margin-top: 0;
