@@ -42,6 +42,22 @@ $theme-tertiary: #772583;
 $theme-base: #009CA6;
 $theme-dark: #E4752D;
 
+//$grid-breakpoints: (
+        //xs: 0,
+        //sm: 576px,
+        //md: 768px,
+        //lg: 992px,
+        //xl: 1200px
+//);
+
+//@each $breakpoint in map-keys($grid-breakpoints) {
+  //@each $size, $length in $sizes {
+    //@include media-breakpoint-up($breakpoint) {
+      //.w-#{$breakpoint}-#{$size} {width: $length !important;}
+    //}
+  //}
+//}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "mixins",
