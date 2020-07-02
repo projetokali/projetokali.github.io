@@ -326,8 +326,13 @@ header {
 
 // Contact
 #contact .fa {
-    color: $theme-dark;
+    color: $theme-secondary;
     font-size: 4em;
+}
+
+#contact hr {
+    color: $theme-secondary;
+    border-color: $theme-secondary;
 }
 
 // Extras
