@@ -45,11 +45,11 @@ p {
 }
 
 .bg-primary {
-    background-color: $theme-primary;
+    background-color: $theme-primary !important;
 }
 
 .bg-secondary {
-    background-color: $theme-secondary;
+    background-color: $theme-secondary !important;
 }
 
 .bg-tertiary {
