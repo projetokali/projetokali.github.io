@@ -46,6 +46,14 @@ p {
 
 .bg-primary {
     background-color: $theme-primary !important;
+    @include transition-all;
+    a {
+        color: rgba($theme-tertiary, .7);
+        &:hover,
+        &:focus {
+            color: darken($theme-tertiary, 10%);
+        }
+    }
 }
 
 .bg-secondary {
@@ -303,7 +311,7 @@ header {
     padding-left:0;
 }
 
-// Button Styles
+// Button Styles}
 .btn-default {
     @include button-variant($theme-dark, white, white);
 }
