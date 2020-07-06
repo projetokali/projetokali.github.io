@@ -46,6 +46,12 @@ p {
     margin-bottom: 20px;
 }
 
+li {
+    @include sans-serif-font;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 p.large{
     font-size: 22px;
 }
