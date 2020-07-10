@@ -34,7 +34,7 @@
                 if(from >= to){
                     throw console.error("Error in counter " + selector + ", 'from' value must be smaller than 'to' value");
                 }
-                var duration = parseInt(counter.attr("duration")) || 1200;
+                var duration = parseInt(counter.attr("duration")) || 1500;
                 var steps = 0, aux = from;
                 while(aux < to){
                     steps++;
