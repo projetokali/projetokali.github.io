@@ -34,7 +34,7 @@
                 if(from >= to){
                     throw console.error("Error in counter " + selector + ", 'from' value must be smaller than 'to' value");
                 }
-                var duration = parseInt(counter.attr("duration")) || 1500;
+                var duration = parseInt(counter.attr("duration")) || 1200;
                 var steps = 0, aux = from;
                 while(aux < to){
                     steps++;
@@ -44,6 +44,7 @@
                     aux += del;
                 }
                 var interval = duration/steps;
+                counter.text(from);
                 var intervalID = setInterval(() => {
                     from = parseInt(counter.text());
                     if(from === to) {
@@ -61,9 +62,9 @@
         });    
     }
 
-    countUp("#countAlunes");
-    countUp("#countVoluntaries");
-    countUp("#countTurmas");
+    countUp("#counterAlunes");
+    countUp("#counterVoluntaries");
+    countUp("#counterTurmas");
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li:not(.dropdown) a').click(function() {
