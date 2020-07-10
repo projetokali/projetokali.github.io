@@ -22,6 +22,44 @@
         offset: 51
     })
 
+    // Count Up function
+    $(document).bind('scroll', function(env) {
+        var counter = $('.counter');
+        var scrollOffset = $(document).scrollTop();
+        var containerOffset = counter.offset().top - window.innerHeight;
+        if (scrollOffset > containerOffset) {
+            var from = parseInt(counter.attr('count-from')) || 0;
+            var to = parseInt(counter.attr("count-to"));
+            if(from >= to){
+                throw console.error("Error in counter, 'from' value must be smaller than 'to' value");
+            }
+            var duration = parseInt(counter.attr("duration")) || 1500;
+            var steps = 0, aux = from;
+            while(aux < to){
+                steps++;
+                var del = Math.ceil((to - aux) / 10);
+                del = Math.max(1, del);
+                del = Math.min(to - aux, del);
+                aux += del;
+            }
+            var interval = duration/steps;
+            var intervalID = setInterval(() => {
+                from = parseInt(counter.text());
+                if(from === to) {
+                    clearInterval(intervalID);
+                    return ;
+                }
+                var del = Math.ceil((to - from) / 10);
+                del = Math.max(1, del);
+                del = Math.min(to - from, del);
+                from += del;
+                counter.text(from);
+            }, interval);
+            // unbind event
+            $(document).unbind('scroll');
+        }
+    });    
+
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li:not(.dropdown) a').click(function() {
         $('.navbar-toggle:visible').click();
