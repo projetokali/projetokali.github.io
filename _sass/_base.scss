@@ -195,8 +195,9 @@ header {
     //min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: linear-gradient(45deg, $transparent-theme-primary, $transparent-theme-base), url('../img/kali-large2.jpg');
-    -webkit-background-size: cover;
+    //background-image: linear-gradient(45deg, $transparent-theme-primary, $transparent-theme-base), url('../img/kali-large2.jpg');
+    //-webkit-background-size: cover;
+    background-color: $theme-tertiary;
     background-size: cover;
     text-align: center;
     color: white;
@@ -255,7 +256,7 @@ header {
     min-height: 100vh;
     @include background-cover;
     background-position: center;
-    background-image: linear-gradient(0deg, $transparent-theme-primary, $transparent-theme-base), url('../img/fotos/passeio-usp.jpg');
+    background-image: linear-gradient(0deg, $transparent-theme-base, $transparent-theme-base), url('../img/fotos/passeio-usp.jpg');
     -webkit-background-size: cover;
     background-size: cover;
     text-align: center;
@@ -356,6 +357,10 @@ header {
 
 .btn-primary {
     @include button-variant(white, $theme-primary, $theme-primary);
+}
+
+.btn-secondary {
+    @include button-variant($theme-dark, white, white);
 }
 
 .btn {
