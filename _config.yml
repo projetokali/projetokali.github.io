@@ -15,8 +15,8 @@ form_inscricao_voluntarios: "https://www.google.com/forms/about/"
 form_inscricao_alunos: "https://www.google.com/forms/about/"
 
 n_voluntaries: "40"
-n_alunes: "30"
-n_turmas: "4"
+n_alunes: "600"
+n_turmas: "28"
 
 # Build settings
 markdown: kramdown
