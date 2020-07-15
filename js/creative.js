@@ -25,8 +25,7 @@
     // Count Up function
     const countUp = (selector) => {
         var counter = $(selector);
-        if (counter == null) {
-            console.log("vai bindar do mesmo jeito")
+        if (counter != null) {
 			$(document).bind("scroll", function (env) {
 				var scrollOffset = $(document).scrollTop();
 				var containerOffset = counter.offset().top - window.innerHeight;
