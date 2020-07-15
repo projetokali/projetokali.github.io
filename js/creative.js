@@ -30,8 +30,8 @@
 				var scrollOffset = $(document).scrollTop();
 				var containerOffset = counter.offset().top - window.innerHeight;
 				if (scrollOffset > containerOffset) {
-					var from = parseInt(counter.attr("count-from")) || 0;
-					var to = parseInt(counter.attr("count-to"));
+                    var from = parseInt(counter.attr("count-from")) || 0;
+                    var to = parseInt(counter.attr("count-to"));
 					if (from >= to) {
 						throw console.error(
 							"Error in counter " +

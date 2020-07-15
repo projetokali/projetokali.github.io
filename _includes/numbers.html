@@ -1,23 +1,23 @@
-<section id="numeros" class="d-none bg-secondary">
+<section id="numeros" class="bg-secondary">
     <div class="container">
         <div class="row">
             <div class="col-md-4 text-center">
                 <div class="wow flipInY" data-wow-delay="0.1s">
-                    <h1 id="counterAlunes" count-to="100" count-from="0"></h1>
+                    <h1 id="counterAlunes" count-to={{site.n_alunes}} ></h1>
                     <h3 class="text-uppercase">Alunes</h3>
                     <i class="mt-2 fa fa-heart fa-3x"></i>
                 </div>
             </div>
             <div class="col-md-4 text-center">
                 <div class="wow flipInY" data-wow-delay="0.2s">
-                    <h1 id="counterVoluntaries" count-to="100000" count-from="200"></h1>
+                    <h1 id="counterVoluntaries" count-to={{site.n_voluntaries}}></h1>
                     <h3 class="text-uppercase">Voluntáries</h3>
                     <i class="mt-2 fa fa-users fa-3x"></i>
                 </div>
             </div>
             <div class="col-md-4 text-center">
                 <div class="wow flipInY" data-wow-delay="0.3s">
-                    <h1 id="counterTurmas" count-to="5" count-from="0"></h1>
+                    <h1 id="counterTurmas" count-to={{site.n_turmas}}></h1>
                     <h3 class="text-uppercase">Turmas</h3>
                     <i class="mt-2 fa fa-book fa-3x"></i>
                 </div>

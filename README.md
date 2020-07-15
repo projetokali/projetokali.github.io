@@ -30,3 +30,5 @@ jekyll serve
 Informações básicas do projeto e links importantes do site estão definidos em [`_config.yml`](./_config.yml).
 
 Para redefinir, por exemplo, o link do formulário de inscrição de novos voluntários, basta mudar o valor de `form_inscricao_voluntario`.
+
+Neste mesmo arquivo se encontram também informações como o número de voluntáries, alunes e turmas.
