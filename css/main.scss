@@ -43,21 +43,14 @@ $theme-base: #009CA6;
 $theme-dark: #E4752D;
 $theme-pink: #b63542;
 
-//$grid-breakpoints: (
-        //xs: 0,
-        //sm: 576px,
-        //md: 768px,
-        //lg: 992px,
-        //xl: 1200px
-//);
+@font-face {
+    font-family: 'chalkitup';
+    src: url('../fonts/djbchalkitup-webfont.woff2') format('woff2'),
+         url('../fonts/djbchalkitup-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-//@each $breakpoint in map-keys($grid-breakpoints) {
-  //@each $size, $length in $sizes {
-    //@include media-breakpoint-up($breakpoint) {
-      //.w-#{$breakpoint}-#{$size} {width: $length !important;}
-    //}
-  //}
-//}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

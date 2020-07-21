@@ -64,3 +64,9 @@
 {
 	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
+
+
+@mixin chalk-font()
+{
+	font-family: ChalkItUp;
+}
