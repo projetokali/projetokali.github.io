@@ -258,7 +258,8 @@ header {
     min-height: 100vh;
     @include background-cover;
     background-position: center;
-    background-image: linear-gradient(0deg, $transparent-theme-base, $transparent-theme-base), url('../img/fotos/passeio-usp.jpg');
+    //background-image: linear-gradient(0deg, $transparent-theme-base, $transparent-theme-base), url('../img/fotos/passeio-usp-azul.jpg');
+    background-image: url('../img/fotos/passeio-usp-azul-2.jpeg');
     -webkit-background-size: cover;
     background-size: cover;
     text-align: center;
