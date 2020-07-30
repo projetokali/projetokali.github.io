@@ -1,10 +1,10 @@
-<section id="numeros" class="bg-secondary">
+<section id="numeros" class="bg-secondary" style="padding-top: 50px; padding-bottom: 50px;">
     <div class="container">
         <div class="row">
             <div class="col-md-4 text-center">
                 <div class="wow flipInY" data-wow-delay="0.1s">
                     <div class="d-flex flex-row justify-content-center">
-                        <h1>+</h1><h1 id="counterAlunes" count-to={{site.n_alunes}} ></h1>
+                        <h1 id="counterAlunes" count-to={{site.n_alunes}} signBeforeNumber="+"></h1>
                     </div>
                     <h3 class="text-uppercase">Estudantes</h3>
                     <i class="mt-2 fa fa-heart fa-3x"></i>
@@ -20,8 +20,7 @@
             <div class="col-md-4 text-center">
                 <div class="wow flipInY" data-wow-delay="0.3s">
                     <div class="d-flex flex-row justify-content-center">
-                        <h1>+</h1>
-                        <h1 id="counterTurmas" count-to={{site.n_turmas}}></h1>
+                        <h1 id="counterTurmas" count-to={{site.n_turmas}} signBeforeNumber="+"></h1>
                     </div>
                     <h3 class="text-uppercase">Turmas</h3>
                     <i class="mt-2 fa fa-book fa-3x"></i>
