@@ -109,7 +109,7 @@
     })
 
 	// Request Instagram posts
-    if ($("#post-0") != null) {
+    if ($("#posts") != null) {
 		fetch("https://www.instagram.com/projetokali/?__a=1", {
 			method: "GET",
 		}).then(res => {
@@ -123,10 +123,24 @@
 			res.json().then(data => {
 				try {
 					var timeline = data.graphql.user.edge_owner_to_timeline_media.edges;
-					console.log("Timeline ", timeline);
-					
+					var links = $('.post-link')
+					var boxes = $('.post-img')
+					var texts = $('.post-text')
+					for(let i=0;i<6;i++){
+						let post = timeline[i].node;
+						let postSrc = post.display_url;
+						let postHref = 'https://www.instagram.com/p/' + post.shortcode;
+						let postText = post.edge_media_to_caption.edges[0].node.text;
+						links[i].setAttribute('href', postHref);
+						boxes[i].setAttribute('src', postSrc);
+						texts[i].innerText = postText;
+					}
 				} catch (err) {
 					console.log("Error parsing timeline from resp", err);
+
+				} finally {
+					$('#loading-posts').addClass('d-none');
+					$('#posts').removeClass('d-none');
 				}
 			});
 		});
