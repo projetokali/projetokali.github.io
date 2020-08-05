@@ -136,8 +136,7 @@
 						texts[i].innerText = postText;
 					}
 				} catch (err) {
-					console.log("Error parsing timeline from resp", err);
-
+					console.error("Error parsing timeline from resp", err);
 				} finally {
 					$('#loading-posts').addClass('d-none');
 					$('#posts').removeClass('d-none');
