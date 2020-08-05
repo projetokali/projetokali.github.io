@@ -108,6 +108,7 @@
         }
     })
 
+	// Request Instagram posts
     if ($("#post-0") != null) {
 		fetch("https://www.instagram.com/projetokali/?__a=1", {
 			method: "GET",
@@ -123,6 +124,7 @@
 				try {
 					var timeline = data.graphql.user.edge_owner_to_timeline_media.edges;
 					console.log("Timeline ", timeline);
+					
 				} catch (err) {
 					console.log("Error parsing timeline from resp", err);
 				}
