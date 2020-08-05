@@ -137,12 +137,16 @@
 					}
 				} catch (err) {
 					console.error("Error parsing timeline from resp", err);
-				} finally {
-					$('#loading-posts').addClass('d-none');
-					$('#posts').removeClass('d-none');
 				}
 			});
-		});
+		})
+		.catch (err => {
+			console.error("Error on instagram fetch ", err);
+		})
+		.finally(()=> {
+			$('#loading-posts').addClass('d-none');
+			$('#posts').removeClass('d-none');
+		})
 	}
     new WOW().init();
 })(jQuery); // End of use strict
