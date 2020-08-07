@@ -76,10 +76,10 @@
             var counted = false;
             countAction(() => counted = true);
             if (counted === false) {
-				$(document).bind("scroll", () => {
-					//console.log("Scrolling " + selector);
-					countAction(() => $(document).unbind("scroll"));
-				});
+				const listenerScroll = () => {
+					countAction(() => $(document).unbind("scroll", listenerScroll));
+				};
+				$(document).bind("scroll", listenerScroll);
 			}
         }
     };
