@@ -6,6 +6,24 @@ Página desenvolvida com base no tema [Creative](http://startbootstrap.com/templ
 
 ## Dev
 
+### Organização
+
+Cada página do site é descrita pelos arquivos `.html` presentes na pasta principal do repositório: `index.html`, `participe.html`, `sobre.html` e `google101861cb5388fd7c.html`.
+
+Essas são as páginas que serão disponibilizadas publicamente e podem ser acessadas no link `https://projetokali.github.io/`.
+
+Cada uma dessas páginas é escrita seguindo o modelo de [layouts do Jekyll](https://jekyllrb.com/docs/step-by-step/04-layouts/).
+
+Por sua vez, os arquivos de layout estão definidos na página [_layouts](_layouts).
+
+Um arquivo de layout é como o esqueleto de uma página, nele podemos ver em mais detalhes como uma página é montada.
+
+Finalmente, um arquivo de layout é composto por vários arquivos `html` da pasta [_includes](_includes).
+
+Os arquivos da pasta `_includes` descrevem componentes básicas do site, como por exemplo o arquivo [_includes/contact.html](_includes/contact.html) descreve a seção de contatos:
+
+![seção de contatos do site](img/contato.PNG "Contatos")
+
 ### Instalação
 
 Instalar Ruby, Bundler, Jekyll e html-proofer.
