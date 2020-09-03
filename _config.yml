@@ -1,15 +1,15 @@
 # Site settings
-title: "Projeto Kali"
-email: "contato@projetokali.com.br"
+title: "Projeto Kelly"
+email: "contato@projetokelly.com.br"
 description: >  # this means to ignore newlines until "baseurl:"
-  O KALI é um projeto social, sem fins lucrativos, formado por jovens voluntários que buscam apoiar a realização de sonhos por meio da educação.
+  O KELLY é um projeto social, sem fins lucrativos, formado por jovens voluntários que buscam apoiar a realização de sonhos por meio da educação.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
-github: "projetokali/projetokali.github.io"
-instagram: "projetokali"
-facebook: "Kali"
-facebook_url: "https://www.facebook.com/projetokali"
+github: "projetokelly/projetokelly.github.io"
+instagram: "projetokelly"
+facebook: "Kelly"
+facebook_url: "https://www.facebook.com/projetokelly"
 
 form_inscricao_voluntarios: "https://docs.google.com/forms/d/1ynp4C2z2nJff9wr5wSMIICFE4u2E2ehYPRh6jJpRAJs/viewform?edit_requested=true"
 form_inscricao_alunos: "https://docs.google.com/forms/d/e/1FAIpQLSf2lxWhkuF1ROEvdannhD7AZ0HXx8jg7_J9SPjPc41yyNns9A/viewform"
