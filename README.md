@@ -77,3 +77,39 @@ jekyll serve
 ```
 
 Se tudo rodou corretamente uma mensagem lhe indicará que o site pode ser acessado no endereço [http://127.0.0.1:4000/](http://127.0.0.1:4000/).
+
+### Testando localmente
+
+Após realizar as modificações desejadas no código, você pode também usar a ferramenta `htmlproofer` para testar se o site continua funcionando como esperado.
+
+Para isso basta rodar:
+
+```bash
+jekyll build
+htmlproofer ./_site/
+```
+
+O primeiro comando, `jekyll build` gera os documentos `html` finais que compõem o site e salva os mesmos na pasta [`_site/`](./_site/).
+Já o segundo comando realiza uma varredura nos arquivos gerados, checando coisas como:
+
+- Se os links internos e externos do site estão apontando para páginas válidas
+- Se as imagens tem texto 'alt' (texto usado nos leitores de tela)
+- Se os ícones de site (favicon) são carregados com sucesso
+- Se os scripts do site internos e externos podem ser executados
+- [Entre outros...](https://github.com/gjtorikian/html-proofer#whats-tested)
+
+### Bugs comuns
+
+- htmlproofer não encontra módulos libcurl
+
+```bash
+$ htmlproofer ./_site
+[...]
+Could not open library 'libcurl.dll': The specified module could not be found.
+.
+Could not open library 'libcurl.so.4': The specified module could not be found.
+.
+Could not open library 'libcurl.so.4.dll': The specified module could not be found.
+```
+
+[Solução do stack overflow](https://stackoverflow.com/questions/39377541/how-to-solve-libcurl-not-found-with-rails-on-windows)
