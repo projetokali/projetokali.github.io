@@ -93,6 +93,12 @@ p.medium{
     color: white;
 }
 
+.bg-base-light {
+    background-color: $theme-base-light;
+    color: $theme-base;
+}
+
+
 .bg-dark {
     background-color: $theme-dark;
     color: white;
