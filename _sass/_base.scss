@@ -12,6 +12,11 @@ body {
     overflow-x: hidden; // Arruma o problema do scroll horizontal com o fade-right e fade-left
 }
 
+.banner {
+    width: 100%;
+    height: auto;
+}
+
 hr {
     border-color: $theme-primary;
     border-width: 3px;
@@ -457,4 +462,18 @@ body {
     &.active{
         background-color: $theme-pink !important;
     }
+}
+
+$form-range-track-width:          100%;
+$form-range-track-height:         .5rem;
+$form-range-track-cursor:         pointer;
+$form-range-track-border-radius:  1rem;
+
+$form-range-thumb-width:                   1rem;
+$form-range-thumb-border:                  0;
+$form-range-thumb-border-radius:           1rem;
+$form-range-thumb-transition:              background-color .15s ease-in-out, border-color;
+
+input[type=range]::-webkit-slider-runnable-track {
+	border-radius: 1px;
 }

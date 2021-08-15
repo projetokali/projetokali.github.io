@@ -1,0 +1,38 @@
+<div id="apoieBanner">
+	<img class="banner" src="img/apoie/voakali.jpeg" alt="Voa Kali">
+</div>
+<section class="bg-base" style="padding-top: 40px; padding-bottom: 40px;">
+    <div class="container-fluid">
+        <div class="row no-gutters">
+            <div class="col-12 col-lg-6 px-5 d-flex flex-column justify-content-around">
+				<p class="medium">
+					O Projeto Kali é 100% gratuito e visando atender melhor as necessidades e estruturas dos estudantes e
+					voluntáries, nasce o Voa Kali, o nosso novo Programa de Doações.
+				</p>
+				<p class="medium">
+					Os valores arrecadados serão destinados, em geral, a materiais escolares, apostilas, passeios,
+					eventos, alimentação e transporte dos estudantes e funcionará em formato de contratação de planos
+					mensais em que você pode selecionar o pacote que você deseja apoiar.
+				</p>
+				<p class="medium">
+					Vamos juntes nessa transformação pela Educação!
+				</p>
+            </div>
+            <div class="col-12 col-lg-6 my-auto text-center">
+                <img id="doe-img" src="img/apoie/comida.png" class="mw-100" style="max-height: 400px;" data-aos="fade-left" alt="Imagem antiga de voluntários falando sobre o kali em uma escola."></img>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+	function setRandImage() {
+		imgs = ['comida.png', 'material.png', 'passeio.jpeg'];
+		idx = Math.floor(Math.random()*3);
+		path = `img/apoie/${imgs[idx]}`;
+		console.log(path)
+		$("#doe-img")[0].src = path
+	}
+	window.onload = setRandImage
+</script>
+
