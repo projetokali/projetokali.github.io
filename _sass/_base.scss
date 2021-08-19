@@ -12,6 +12,12 @@ body {
     overflow-x: hidden; // Arruma o problema do scroll horizontal com o fade-right e fade-left
 }
 
+@media (max-width: 768px) {
+    .hideOverflowOnMobile {
+        overflow: hidden;
+    }
+}
+
 .banner {
     width: 100%;
     height: auto;
