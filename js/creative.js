@@ -114,7 +114,7 @@
 			method: "GET",
 		}).then(res => {
 			if (res.status !== 200) {
-				console.log(
+				console.error(
 					"Error code in Instagram request response, error code ",
 					res.status
 				);

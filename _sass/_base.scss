@@ -73,6 +73,10 @@ p.medium{
     font-size: 20px;
 }
 
+p.disabled {
+    color: #CCCCCC; 
+}
+
 .bg-primary {
     background-color: $theme-primary !important;
     @include transition-all;

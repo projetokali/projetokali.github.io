@@ -26,10 +26,10 @@
 			</p>
 		</div>
 
-		<div class="d-flex flex-column align-items-center">
-			<a href="{{ site.picpay }}" target="_blank" class="btn btn-primary btn-xl mt-5"
-				data-aos="zoom-in" data-aos-anchor="#page-top">Quero doar!</a>
-		</div>
+		<a href="{{ site.picpay }}" target="_blank" class="btn btn-primary btn-xl mt-5"
+			data-aos="zoom-in" data-aos-anchor="#page-top">Quero doar!</a>
+		
+		<p id="instrucoes-doacao" class="mt-4 disabled">Ao clicar em Quero Doar caso você esteja em um computador será redirecionado para uma página com QR Code para abrir via câmera celular. Se estiver pelo próprio celular, o aplicativo do picpay será aberto para que a doação seja efetuada.</p>
 	</div>
 </div>
 
@@ -41,4 +41,12 @@
 		}
 		$("#doa-"+valores[i]).removeClass("d-none")
 	}
+	document.addEventListener("DOMContentLoaded", function(){
+		if(/Android|webOS|iPhone|iPad|iPod|pocket|psp|kindle|avantgo|blazer|midori|Tablet|Palm|maemo|plucker|phone|BlackBerry|symbian|IEMobile|mobile|ZuneWP7|Windows Phone|Opera Mini/i.test(navigator.userAgent) ) {
+			$('#instrucoes-doacao').text("Ao clicar em 'Quero doar!' você será redirecionado ao aplicativo do PicPay para fazer sua doação.")
+		}
+		else {
+			$('#instrucoes-doacao').text("Ao clicar em 'Quero doar!' você será redirecionado a uma página com um QR code que poderá ser lido pelo aplicativo do PicPay para realizar sua doação.")
+		}
+	})
 </script>
